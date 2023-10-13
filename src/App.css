@@ -1,0 +1,41 @@
+.boxHome{
+  box-sizing: border-box;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.goTo {
+    color: black;
+}
+
+.active {
+    color: brown;
+  }
+  
+  .imgHome {
+    height: 250px;
+
+  }
+
+
+  :hover.imgHome{
+    transform: scale(1.01);
+    transition:  all 50ms ease-in-out;
+    
+  }
+
+  .containerPoke{
+    box-sizing: border-box;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+
+  

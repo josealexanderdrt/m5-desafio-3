@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Button, Container } from "react-bootstrap";
+import { Button, Container, Spinner } from "react-bootstrap";
 import Swal from 'sweetalert2';
+
 
 const Pokemons = () => {
   const [pokemones, setPokemones] = useState([]);

@@ -15,7 +15,7 @@ const PokeCard = ({ pokemon }) => {
         <Card style={{ width: "18rem" }}>
           <Card.Img variant="top" src={src} />
           <Card.Body>
-            <Card.Title>Card Title</Card.Title>
+            <Card.Title> {name}</Card.Title>
             <Card.Text>
               {stats?.map((stat, i) => (
                 <li key={i}>

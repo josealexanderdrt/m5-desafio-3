@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button, Container } from "react-bootstrap";
+import Swal from 'sweetalert2';
 
 const Pokemons = () => {
   const [pokemones, setPokemones] = useState([]);
@@ -15,7 +16,8 @@ const Pokemons = () => {
   };
 
   const goToPokemonDetails = async() =>{
-    pokemonesSelected? navigate(`/pokemons/${pokemonesSelected}`) : alert("Debes Seleccionar tu pokemon"); 
+    pokemonesSelected? navigate(`/pokemons/${pokemonesSelected}`) : Swal.fire('Debes Seleccionar un Pokemon!')
+    ; 
   }
 
   useEffect(() => {
